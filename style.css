@@ -1,0 +1,107 @@
+/*Vars*/
+:root{
+    /*Font Var*/
+    --font: "Figtree", sans-serif;
+    --font-size: 16px;
+    /*Colors*/
+    --primary-yellow: hsl(47, 88%, 63%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-grey: hsl(0, 0%, 50%);
+    --neutral-black: hsl(0, 0%, 7%);
+}
+/*Reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+body{
+    height: 100vh;
+    background-color: var(--primary-yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-container{
+    max-width: 321px;
+    display: flex;
+    padding: 24px;
+    border-radius: 20px;
+    border: 1px solid hsl(0, 0%, 7%);
+    box-shadow: 8px 8px 0 #000 ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--neutral-white);
+}
+.card-img{
+    width: 279px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+.card-btn{
+    width: 73px;
+    height: 26px;
+    margin-bottom: 12px;
+    font-size: 12px;
+    font-weight: 900;
+    background-color: var(--primary-yellow);
+    border: none;
+    border-radius: 4px;
+}
+.card-date{
+    font-size: 12px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+.card-tittle{
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+.card-tittle:hover{
+    color: var(--primary-yellow);
+}
+.card-description{
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--neutral-grey);
+    margin-bottom: 24px;
+}
+.card-profile__icon{
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+}
+.user-img{
+    width: 32px;
+    margin-right: 12px;
+}
+.profile-tittle{
+    font-weight: 900;
+}
+
+/*Media Querys*/
+
+@media (min-width: 1440px) {
+    .card-container{
+        max-width: 384px;  
+    }
+    .card-img{
+        width: 336px;
+        height: 200px;
+    }
+    .card-description{
+        font-size: 16px;
+    }
+    .card-tittle{
+        font-size: 24px;
+    }
+    .card-date,
+    .card-btn{
+        font-size: 14px;
+    }
+}
